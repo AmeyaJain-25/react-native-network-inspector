@@ -24,7 +24,7 @@ This is how captured requests can be viewed in your own UI.
 // Render your list with requests;
 // start() / stop() to begin or end capture.</code></pre>
 
-<img src="https://raw.githubusercontent.com/AmeyaJain-25/react-native-network-inspector/refs/heads/master/demo-images/all-requests.png" alt="All requests" style="max-width: 100%; height: auto; display: block;" />
+<img src="https://raw.githubusercontent.com/AmeyaJain-25/react-native-network-inspector/refs/heads/master/demo-images/all-requests.png" alt="All requests" style="max-width: 280px; width: 100%; height: auto; display: block; margin: 0 auto;" />
 
 </td>
 <td width="50%" valign="top" style="overflow: hidden;">
@@ -35,7 +35,7 @@ This is how captured requests can be viewed in your own UI.
   ignoredHosts: ["10.0.2.2"],
 });</code></pre>
 
-<img src="https://raw.githubusercontent.com/AmeyaJain-25/react-native-network-inspector/refs/heads/master/demo-images/filtered-requests.png" alt="Filtered requests" style="max-width: 100%; height: auto; display: block;" />
+<img src="https://raw.githubusercontent.com/AmeyaJain-25/react-native-network-inspector/refs/heads/master/demo-images/filtered-requests.png" alt="Filtered requests" style="max-width: 280px; width: 100%; height: auto; display: block; margin: 0 auto;" />
 
 </td>
 </tr>
