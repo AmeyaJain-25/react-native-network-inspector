@@ -1,6 +1,6 @@
 {
   "name": "react-native-network-inspector",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React Native network inspector - intercept and inspect HTTP requests. Export only API and hooks; build your own UI.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -17,6 +17,9 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint src --ext .ts,.tsx",
     "lint-fix": "eslint src --ext .ts,.tsx --fix",
+    "version:patch": "npm version patch --no-git-tag-version",
+    "version:minor": "npm version minor --no-git-tag-version",
+    "version:major": "npm version major --no-git-tag-version",
     "publish:js": "yarn build && node scripts/prepare-package.js && cd lib && npm publish --registry=https://registry.npmjs.org/"
   },
   "keywords": [
