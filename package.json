@@ -1,0 +1,61 @@
+{
+  "name": "react-native-network-inspector",
+  "version": "0.1.0",
+  "description": "React Native network inspector - intercept and inspect HTTP requests. Export only API and hooks; build your own UI.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "require": "./lib/index.js",
+      "default": "./lib/index.js"
+    }
+  },
+  "scripts": {
+    "build": "rm -rf lib && tsc",
+    "clean": "rm -rf lib",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint-fix": "eslint src --ext .ts,.tsx --fix",
+    "publish:js": "yarn build && node scripts/prepare-package.js && cd lib && npm publish"
+  },
+  "keywords": [
+    "react-native",
+    "network",
+    "inspector",
+    "request",
+    "xhr",
+    "debug",
+    "logger"
+  ],
+  "author": "AmeyaJain-25",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-native": ">=0.72.0"
+  },
+  "devDependencies": {
+    "@types/react": ">=16.8.0",
+    "@types/react-native": ">=0.72.0",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "lib",
+    "README.md",
+    "yarn.lock"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmeyaJain-25/react-native-network-inspector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AmeyaJain-25/react-native-network-inspector/issues"
+  },
+  "homepage": "https://github.com/AmeyaJain-25/react-native-network-inspector#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

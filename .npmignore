@@ -1,0 +1,11 @@
+# Source and tooling (you publish from lib/ via publish:js; this protects root publish)
+src/
+scripts/
+tsconfig.json
+.git/
+.gitignore
+*.log
+.DS_Store
+.env
+.env.*
+node_modules/
