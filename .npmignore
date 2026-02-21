@@ -1,6 +1,7 @@
 # Source and tooling (you publish from lib/ via publish:js; this protects root publish)
 src/
 scripts/
+demo-images/
 tsconfig.json
 .git/
 .gitignore

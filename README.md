@@ -2,6 +2,29 @@
 
 React Native network inspector – intercept and inspect HTTP/XHR requests. This package exports **only** the core API and hooks; you build your own UI.
 
+## Demo
+
+This is how captured requests can be viewed in your own UI.
+
+**Base code (default options)** — intercept and display all requests:
+
+```tsx
+const { requests, isActive, start, stop } = useNetworkRequests();
+// Render your list with requests; start() / stop() to begin or end capture.
+```
+
+![All requests](https://raw.githubusercontent.com/AmeyaJain-25/react-native-network-inspector/refs/heads/master/demo-images/all-requests.png)
+
+**With options** — e.g. ignore a host so it does not appear in the list:
+
+```tsx
+const { requests, isActive, start, stop } = useNetworkRequests({
+  ignoredHosts: ["10.0.2.2"],
+});
+```
+
+![Filtered requests](https://raw.githubusercontent.com/AmeyaJain-25/react-native-network-inspector/refs/heads/master/demo-images/filtered-requests.png)
+
 ## Installation
 
 ```bash
@@ -26,7 +49,9 @@ inspector.start({
   ignoredHosts: ["analytics.example.com"],
   ignoredUrls: ["https://example.com/ignore"],
   ignoredPatterns: [/^GET https:\/\/api\.example\.com\/health/],
-  onRequestsChange: (requests) => console.log(requests.length),
+  onRequestsChange: (requests) => {
+    console.log(requests.length);
+  },
 });
 
 // Read current requests
