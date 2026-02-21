@@ -21,14 +21,26 @@
   },
   "keywords": [
     "react-native",
+    "network-inspector",
     "network",
     "inspector",
-    "request",
+    "http",
     "xhr",
+    "fetch",
+    "interceptor",
+    "request",
     "debug",
-    "logger"
+    "logger",
+    "devtools",
+    "api-monitor",
+    "network-monitor",
+    "request-logger",
+    "react-native-debug"
   ],
-  "author": "AmeyaJain-25",
+  "author": {
+    "name": "Ameya Jain",
+    "url": "https://github.com/AmeyaJain-25"
+  },
   "license": "MIT",
   "peerDependencies": {
     "react": ">=16.8.0",
