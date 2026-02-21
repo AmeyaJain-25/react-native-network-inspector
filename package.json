@@ -17,7 +17,7 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint src --ext .ts,.tsx",
     "lint-fix": "eslint src --ext .ts,.tsx --fix",
-    "publish:js": "yarn build && node scripts/prepare-package.js && cd lib && npm publish"
+    "publish:js": "yarn build && node scripts/prepare-package.js && cd lib && npm publish --registry=https://registry.npmjs.org/"
   },
   "keywords": [
     "react-native",
